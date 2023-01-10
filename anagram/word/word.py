@@ -3,9 +3,10 @@ import random
 
 
 class Anagram:
-    def __init__(self, question, hint):
+    def __init__(self, question, hint, answer):
         self._question = question
         self._hint = hint
+        self._answer = answer
 
     def __repr__(self):
         return "{},\n{}".format(self._question, self._hint)
@@ -39,4 +40,4 @@ def anagram(length=5):
 
         question = question.lower()
 
-        return Anagram(question, hint)
+        return Anagram(question, hint, word)

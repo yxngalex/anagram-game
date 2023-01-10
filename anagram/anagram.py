@@ -2,6 +2,15 @@ import json
 import random
 
 
+class Anagram:
+    def __init__(self, question, hint):
+        self.question = question
+        self.hint = hint
+
+    def __repr__(self):
+        return "{},\n{}".format(self.question, self.hint)
+
+
 def pick_word(data, length):
     words = list(data.keys())
     while True:
@@ -20,14 +29,14 @@ def shuffle(word):
             return shuffled
 
 
-def anagram():
+def anagram(length=5):
     data = json.load(open('anagram/data/dictionary.json'))
 
     while True:
-        word = pick_word(data, 9)
+        word = pick_word(data, length)
         question = shuffle(word)
         hint = data[word]
 
         question = question.lower()
 
-        return {question, hint}
+        return Anagram(question, hint)

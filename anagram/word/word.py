@@ -4,11 +4,11 @@ import random
 
 class Anagram:
     def __init__(self, question, hint):
-        self.question = question
-        self.hint = hint
+        self._question = question
+        self._hint = hint
 
     def __repr__(self):
-        return "{},\n{}".format(self.question, self.hint)
+        return "{},\n{}".format(self._question, self._hint)
 
 
 def pick_word(data, length):

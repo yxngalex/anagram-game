@@ -1,4 +1,6 @@
-from .anagram import anagram
+from .word import anagram
+from .player import Player
+from .timer import Timer
 import tkinter as tk
 
 

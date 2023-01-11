@@ -42,19 +42,7 @@ def player_input(num_players_entry):
         btn = Button(playerFrame, text="Done", command=lambda: create_players(input_field, playerFrame, a))
         btn.pack(pady=20)
     else:
-        go_to_game_frame()
-        print(playerList)
-
-
-# print(type(num_players_entry))
-# num = int(num_players_entry.get())
-# labelText = StringVar()
-# label2.pack(pady=20)
-#
-#
-# for i in range(num):
-#     labelText.set("Set name for player {}".format(i + 1))
-#
+        game_frame()
 
 
 def create_players(name, frame, num):
@@ -81,14 +69,15 @@ def player_selection():
 
 
 def game_frame():
-    print("game frame")
-    print(playerList)
+    go_to_game_frame()
+    t = Timer(10)
+    for p in playerList:
+        label3 = Label(mainGameFrame, text="Time: {}".format(t.countdown()), font=("Helvetica", 12))
+        label3.pack()
 
 
 def main():
     player_selection()
-    # a = anagram(9)
-    # print(a)
 
     window.mainloop()
 

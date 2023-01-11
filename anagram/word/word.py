@@ -8,6 +8,15 @@ class Anagram:
         self._hint = hint
         self._answer = answer
 
+    def get_question(self):
+        return self._question
+
+    def get_hint(self):
+        return self._hint
+
+    def get_answer(self):
+        return self._answer
+
     def __repr__(self):
         return "{},\n{}".format(self._question, self._hint)
 
@@ -33,11 +42,10 @@ def shuffle(word):
 def anagram(length=5):
     data = json.load(open('anagram/data/dictionary.json'))
 
-    while True:
-        word = pick_word(data, length)
-        question = shuffle(word)
-        hint = data[word]
+    word = pick_word(data, length)
+    question = shuffle(word)
+    hint = data[word]
 
-        question = question.lower()
+    question = question.lower()
 
-        return Anagram(question, hint, word)
+    return Anagram(question, hint, word)

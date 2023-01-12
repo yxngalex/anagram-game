@@ -16,4 +16,4 @@ class Player:
         return self._score
 
     def __repr__(self):
-        return "{}, {}".format(self.get_name(), self.get_score())
+        return "Player: {}, has a score of {} points!".format(self.get_name(), self.get_score())

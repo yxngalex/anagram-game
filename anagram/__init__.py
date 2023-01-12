@@ -44,7 +44,7 @@ def start():
 
 
 def solve(answer, inpt, frame):
-    if answer == inpt:
+    if answer == inpt.lower():
         count = p.get_score() + 1
         p.set_score(count)
         clear_frame(frame)

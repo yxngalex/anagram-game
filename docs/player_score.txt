@@ -3,3 +3,5 @@ Player: aleksa, has a score of 0 points!
 Player: asd, has a score of 0 points!
 Player: Test1, has a score of 3 points!
 Player: Alex, has a score of 1 points!
+Player: a, has a score of 1 points!
+Player: Test2, has a score of 1 points!

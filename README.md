@@ -9,10 +9,10 @@ The Dictionary has been downloaded from this [link](https://github.com/matthewre
 
 ## Functionality
 
-1. Player can track his score.
-2. Around 10k words can be generated from a dictionary, depending on the size.
-3. Every time player solves an Anagram, he's given a score
-4. Every time player misses an Anagram, a score has been downed by 1
+1. Player can track his score,
+2. Around 10k words can be generated from a dictionary, depending on the size,
+3. Every time player solves an Anagram, he's given a score,
+4. Every time player misses an Anagram, a score has been downed by 1.
 
 ## Images
 

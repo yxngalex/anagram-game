@@ -13,9 +13,6 @@ header.pack(pady=20)
 startFrame = Frame(window)
 mainGameFrame = Frame(window)
 
-t = StringVar()
-t.set("30")
-
 p = Player()
 
 
